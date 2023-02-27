@@ -1,0 +1,27 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+.dice {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 200px;
+	height: 200px;
+	margin: 50px 0;
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+
+.dot {
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	background-color: #000;
+	border-radius: 50%;
+}
