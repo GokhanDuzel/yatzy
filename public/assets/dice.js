@@ -1,5 +1,3 @@
-class dice {
-    constructor(){
-        
-    }
+const dice = () => {
+
 }

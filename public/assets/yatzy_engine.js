@@ -1,5 +1,3 @@
-class YatzyEngine {
-    constructor(){
-        
-    }
+const YatzyEngine = () => {
+
 }

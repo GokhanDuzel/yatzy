@@ -1,6 +1,4 @@
 const YatzyGame = () => {
-    constructor(){
-        
-    }
+    
 }
 
