@@ -59,5 +59,22 @@ const YatzyEngine = () => {
         chance: null,
     };
 
+    const availableRolls = 3;
+
+    const rollDices = () => {
+
+        if(availableRolls > 0) {
+            dices.forEach((dice, i) => {
+                if(!dice.getIsChoosen){
+                    dice.roll();
+                    availableRolls--;
+                };
+            });
+        } else {
+            throw new Error("you dont have any more rolls!")
+        };
+
+    };
+
 }
 
