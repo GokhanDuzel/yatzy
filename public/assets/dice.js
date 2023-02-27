@@ -1,6 +1,7 @@
 const Dice = () => {
 
     let diceVal = null;
+    let choosen = false;
 
     const roll = () => {
         diceVal = Math.floor(Math.random() * 6) + 1;
@@ -8,7 +9,11 @@ const Dice = () => {
 
     const getDiceVal = () => {
         return diceVal;
-    }
+    };
 
-    return { roll, getDiceVal };
+    const getIsChoosen = () => {
+        return choosen;
+    };
+
+    return { roll, getDiceVal, getIsChoosen };
 }

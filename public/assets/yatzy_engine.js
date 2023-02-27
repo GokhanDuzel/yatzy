@@ -29,4 +29,35 @@ const CHANCE = "Chance";
 
 const YatzyEngine = () => {
 
+    const dice1 = Dice();
+    const dice2 = Dice();
+    const dice3 = Dice();
+    const dice4 = Dice();
+    const dice5 = Dice();
+
+    const dices = [
+        dice1,
+        dice2,
+        dice3,
+        dice4,
+        dice5
+    ];
+
+    const scores = {
+        ones: null,
+        twos: null,
+        threes: null,
+        fours: null,
+        fives: null,
+        sixes: null,
+        threeOfAKind: null,
+        fourOfAKind: null,
+        fullHouse: null,
+        smallStraight: null,
+        largeStraight: null,
+        yahtzee: null,
+        chance: null,
+    };
+
 }
+
