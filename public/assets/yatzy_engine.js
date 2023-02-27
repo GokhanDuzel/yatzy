@@ -76,5 +76,22 @@ const YatzyEngine = () => {
 
     };
 
+    const chosen = true;
+
+    const chooseDice = (i) => {
+        dices[i].setChoosen(chosen);
+    };
+
+    const getDiceVals = () => {
+        return dices.map((dice) => dice.getDiceVal);
+    };
+
+    const getScores = () => {
+        getScores;
+    };
+
+    return{ rollDices, getDiceVals, getScores, chooseDice };
+
+
 }
 

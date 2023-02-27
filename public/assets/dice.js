@@ -11,9 +11,13 @@ const Dice = () => {
         return diceVal;
     };
 
+    const setChoosen = (choice) => {
+        choosen = choice;
+    };
+
     const getIsChoosen = () => {
         return choosen;
     };
 
-    return { roll, getDiceVal, getIsChoosen };
+    return { roll, getDiceVal, getIsChoosen, setChoosen };
 }
