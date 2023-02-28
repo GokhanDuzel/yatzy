@@ -19,16 +19,14 @@ const YatzyGame = () => {
     return yatzyEngine.getDiceVals();
   };
 
-  let button = document.getElementById("button");
+//   document.getElementById("button").onclick = function() {
+//     rollButtonEvent();
+//   };
 
-  document.getElementById("button").onclick = function() {
-    rollButtonEvent();
-  };
-
-  const rollButtonEvent = () => {
-    rollDices();
-    console.log(getDiceVals());
-  }
+//   const rollButtonEvent = () => {
+//     rollDices();
+//     console.log(getDiceVals());
+//   }
 
   // const rollButtonEvent = () => {
   //     rollDices();
