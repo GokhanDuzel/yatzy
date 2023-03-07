@@ -2,7 +2,7 @@ const YatzyGame = () => {
   const yatzyEngine = YatzyEngine();
   let turn = 0;
 
-  const rollDices = () => {
+  const rollAllDices = () => {
     turn++;
     if (turn <= 13) {
       yatzyEngine.rollDices();
@@ -19,14 +19,20 @@ const YatzyGame = () => {
     return yatzyEngine.getDiceVals();
   };
 
-//   document.getElementById("button").onclick = function() {
-//     rollButtonEvent();
-//   };
+  rollButton.addEventListener('click', () => {
+	rollAllDices();
+	console.log(getDiceVals());
+    return getDiceVals();	
+  });
 
-//   const rollButtonEvent = () => {
-//     rollDices();
-//     console.log(getDiceVals());
-//   }
+  //   document.getElementById("button").onclick = function() {
+  //     rollButtonEvent();
+  //   };
+
+  //   const rollButtonEvent = () => {
+  //     rollDices();
+  //     console.log(getDiceVals());
+  //   }
 
   // const rollButtonEvent = () => {
   //     rollDices();
@@ -41,5 +47,5 @@ const YatzyGame = () => {
   //     printNum(results);
   // };
 
-  return { button, getDiceVals, getTurn, rollDices, rollButtonEvent };
+  return { button, getDiceVals, getTurn, rollAllDices, rollButton, addEventListener };
 };
